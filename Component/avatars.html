@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color pallets</title>
+    <link rel="stylesheet" href="../salt.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .clr-pallet {
+        position: relative;
+        min-width: 25%;
+        background-color: #ffffff;
+        border-radius: 0.25rem;
+        padding: 0.25rem;
+        margin: 1rem;
+        overflow: hidden;
+        flex-grow: 1;
+      }
+      .clr-label {
+        color: hsl(0, 0%, 0%);
+        padding: 0.25rem;
+        margin: 0.25rem;
+      }
+      .clr-box {
+        display: flex;
+      }
+      .clr {
+        background-color: #000000;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        flex-grow: 6;
+        min-width: 25%;
+      }
+      .clr-code {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .clr-copy {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: center;
+        flex-grow: 1;
+      }
+      @media (max-width: 768px) {
+        .clr-pallet {
+          min-width: 80%;
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+          margin: 1rem;
+          overflow: auto;
+          flex-grow: 1;
+        }
+        .clr {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          flex-grow: 1;
+          max-width: 33%;
+        }
+        .clr-code {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          text-align: center;
+          flex-grow: 1;
+        }
+        .clr-copy {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          text-align: center;
+          flex-grow: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="body-container">
+    <nav class="header">
+      <h1>SALT css</h1>
+    </nav>
+    <nav class="sidebar">
+      <ul class="li-non-bullets">
+        <li class="nav-link">
+          <a class="btn-link" href="colorPallets.html">color pallets</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="avatars.html">Avatars</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="alerts.html">Alerts</a>
+          <!-- alert messages, alert box, notifications -->
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="bedges.html">Badges</a>
+          <!-- badges on avatar or icons -->
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="buttons.html">Buttons</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="cards.html">Cards</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="images.html">Images</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="inputs.html">Inputs</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="lists.html">Lists</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="modal.html">Modal</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="navigation.html">Navigation</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="slider.html">Slider</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="WComponent/typography.html">Typography</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-body">
+      <div class="flex-container component-container">
+        <div class="img-container">
+          <img class="img-tag" src="../images/avatar-svgrepo-com.svg" />
+          <div class="img-badge online-badge"></div>
+          <h4 class="img-title">alishvagadiya</h4>
+        </div>
+        <div class="img-container">
+          <img class="img-tag" src="../images/pexels-elle-hughes-1680172.jpg" />
+          <div class="img-badge ideal-badge"></div>
+        </div>
+        <div class="img-container">
+          <img class="img-tag" src="../images/avatar-svgrepo-com.svg" />
+          <div class="img-badge offline-badge"></div>
+        </div>
+      </div>
+      <div class="flex-container component-container">
+        <div class="img-group">
+          <div class="img-container">
+            <img class="img-tag" src="../images/avatar-svgrepo-com.svg" />
+            <div class="img-badge online-badge"></div>
+          </div>
+          <div class="img-container">
+            <img
+              class="img-tag"
+              src="../images/pexels-elle-hughes-1680172.jpg"
+            />
+            <div class="img-badge ideal-badge"></div>
+          </div>
+          <div class="img-container">
+            <img class="img-tag" src="../images/avatar-svgrepo-com.svg" />
+            <div class="img-badge offline-badge"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color pallets</title>
+    <link rel="stylesheet" href="../salt.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .clr-pallet {
+        position: relative;
+        min-width: 25%;
+        background-color: #ffffff;
+        border-radius: 0.25rem;
+        padding: 0.25rem;
+        margin: 1rem;
+        overflow: hidden;
+        flex-grow: 1;
+      }
+      .clr-label {
+        color: hsl(0, 0%, 0%);
+        padding: 0.25rem;
+        margin: 0.25rem;
+      }
+      .clr-box {
+        display: flex;
+      }
+      .clr {
+        background-color: #000000;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        flex-grow: 6;
+        min-width: 25%;
+      }
+      .clr-code {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .clr-copy {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: center;
+        flex-grow: 1;
+      }
+      @media (max-width: 768px) {
+        .clr-pallet {
+          min-width: 80%;
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+          margin: 1rem;
+          overflow: auto;
+          flex-grow: 1;
+        }
+        .clr {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          flex-grow: 1;
+          max-width: 33%;
+        }
+        .clr-code {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          text-align: center;
+          flex-grow: 1;
+        }
+        .clr-copy {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          text-align: center;
+          flex-grow: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="body-container">
+    <nav class="header">
+      <h1>SALT css</h1>
+    </nav>
+    <nav class="sidebar">
+      <ul class="li-non-bullets">
+        <li class="nav-link">
+          <a class="btn-link" href="colorPallets.html">color pallets</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="avatars.html">Avatars</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="alerts.html">Alerts</a>
+          <!-- alert messages, alert box, notifications -->
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="bedges.html">Badges</a>
+          <!-- badges on avatar or icons -->
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="buttons.html">Buttons</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="cards.html">Cards</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="images.html">Images</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="inputs.html">Inputs</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="lists.html">Lists</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="modal.html">Modal</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="navigation.html">Navigation</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="slider.html">Slider</a>
+        </li>
+        <li class="nav-link">
+          <a class="btn-link" href="WComponent/typography.html">Typography</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-body">
+      <div class="flex-container component-container">
+        <div class="form-container">
+          <div class="input-container">
+            <label class="input-label">Input label</label>
+            <input class="input input-text" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input label Input label</label>
+            <input class="input input-text" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input label Input label</label>
+            <textarea
+              class="input input-textarea"
+              name="textarea"
+              rows="3"
+              cols="32"
+            ></textarea>
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input label</label>
+            <select>
+              <option>first</option>
+              <option>second value</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input label </label>
+            <div class="radio-group">
+              <div class="radio-box">
+                <input class="input input-radio" type="radio" />
+                <label class="input-radio-label">Input</label>
+              </div>
+              <div class="radio-box">
+                <input class="input input-radio" type="radio" />
+                <label class="input-radio-label">Input label</label>
+              </div>
+              <div class="radio-box">
+                <input class="input input-radio" type="radio" />
+                <label class="input-radio-label">Input label</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input label </label>
+            <div class="checkbox-group">
+              <div class="checkbox-box">
+                <input class="input input-checkbox" type="checkbox" />
+                <label class="input-label">Input label</label>
+              </div>
+              <div class="checkbox-box">
+                <input class="input input-checkbox" type="checkbox" />
+                <label class="input-label">Input label</label>
+              </div>
+              <div class="checkbox-box">
+                <input class="input input-checkbox" type="checkbox" />
+                <label class="input-label">Input label</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input Button</label>
+            <input class="input" type="button" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input checkbox</label>
+            <input class="input" type="checkbox" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input color</label>
+            <input class="input" type="color" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input date</label>
+            <input class="input" type="date" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input date time</label>
+            <input class="input" type="datetime-local" placeholder="datetime" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input email</label>
+            <input class="input" type="email" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input file</label>
+            <input class="input" type="file" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input hidden</label>
+            <input class="input" type="hidden" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input image</label>
+            <input class="input" type="image" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input month</label>
+            <input class="input" type="month" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input number</label>
+            <input class="input" type="number" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input password</label>
+            <input class="input" type="password" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input radio</label>
+            <input class="input" type="radio" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input range</label>
+            <input class="input" type="range" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input reset</label>
+            <input class="input" type="reset" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input search</label>
+            <input class="input" type="search" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input submit</label>
+            <input class="input" type="submit" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input tel</label>
+            <input class="input" type="tel" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input text</label>
+            <input class="input" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input time</label>
+            <input class="input" type="time" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input url</label>
+            <input class="input" type="url" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Input week</label>
+            <input class="input" type="week" />
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
