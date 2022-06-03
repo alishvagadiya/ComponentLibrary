@@ -140,6 +140,20 @@ a {
   background-color: #ffffff;
 }
 
+.component-header {
+  width: 100%;
+  color: #000000aa;
+  margin: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.component-note {
+  width: 100%;
+  margin: 0.5rem;
+}
+
 .body-container {
   display: grid;
   grid-template-areas:
@@ -291,10 +305,10 @@ a {
 
 .card-badge {
   background-color: blue;
+  color: white;
   position: absolute;
   content: "";
   width: 6rem;
-  /* margin-top: rem; */
   margin-left: -1.5rem;
   padding: 0.25rem;
   /* transform: rotate(315deg); */
@@ -457,4 +471,94 @@ h4 {
   padding: 0.5rem;
   width: 100%;
   word-break: keep-all;
+}
+
+.btn {
+  padding: 0.5rem .75rem;
+  margin: 0.5rem;
+  width: auto;
+  font-size: 1.25rem;
+  border-radius: .25rem;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: #0142da;
+  color: #ffffff;
+  border: 1px solid #0142da;
+}
+
+.btn-primary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+}
+
+.btn-secondary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-alert {
+  background-color: transparent;
+  color: #00000055;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-alert:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.btn-border-primary {
+  background-color: #ffffff;
+  color: #0142da;
+  border: 1px solid #0142da;
+}
+
+.btn-border-primary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-border-secondary {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.btn-border-secondary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-border-alert {
+  background-color: transparent;
+  color: #00000055;
+  border: 1px solid #00000055;
+  font-weight: bold;
+}
+
+.btn-border-alert:hover {
+  cursor: pointer;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.btn-disabled {
+  opacity: .5;
+  pointer-events: none;
+  /* cursor: not-allowed !important;
+  cursor: no-drop !important; */
+}
+
+a.btn {
+  display: inline-block;
 }
